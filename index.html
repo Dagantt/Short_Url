@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+    
+<head>
+    <meta charset="utf-8">
+    <meta name="Accueil" content="Accueil shorturl">
+    <title>Short Url - Accueil</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Bievenue sur short url</h1>
+        <div class="header_texte">
+            <p>Ici vous pourrez créer des urls plus courts. Vous devez crée un compte pour utiliser ce service</p>
+            <p>Vous pourrez aussi voir le nombre de personnes ayant utilisé vos liens</p>
+        </div>
+    </header>
+    <div class="buttons_section">
+        <button class="buttons" type="register" onclick="window.location.href='pages/register.php';">Inscription</button>
+        <button class="buttons" type="login" onclick="window.location.href='pages/login.php';">login</button>
+    </div>
+</body>
+</html>
+
+<style>
+    body{
+        margin: 0 auto;
+        font-family: 'Roboto', sans-serif;
+        background-color: #FAACA8;
+        height: 100vh;
+        background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
+    }
+
+    header{
+        text-align: center;
+    }
+
+    header h1{
+        color: #ff8c00;
+        font-weight: 700;
+        font-size: 3.5em;
+    }
+
+    .header_texte {
+        margin: 0 auto;
+        width: 25em;
+        color: white;
+        font-size: 1.8em;
+    }
+
+    .buttons_section{
+        margin: 0 auto;
+        width: 25em;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .buttons{
+        transition: 0.2s;
+        color: white;
+        width: 6em;
+        height: 2em;
+        font-size: 1.5em;
+        border-radius: 12px;
+        background-color: transparent;
+        border: 5px solid darkorange;
+    }
+
+    .buttons:hover{
+        transition: 0.2s;
+        background: white;
+        color: black;
+    }
+
+
+
+</style>
