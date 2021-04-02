@@ -46,7 +46,7 @@ include_once('../functions/activate.php');
     ?>
     <div class="liens_utilisateur">
         <?php
-        $link = "http://localhost/urlshort_KELLER_H2/l.php/";
+        $link = "http://localhost/Short_Url/l.php/";
         while($row = mysqli_fetch_array($result)){   #Créer une boucle pour afficher les données récupérées  dans la bdd
             $short_url_sql =  $row['short_url'];
             $url = $link.$short_url_sql;
